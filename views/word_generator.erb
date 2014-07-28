@@ -1,0 +1,11 @@
+<%= erb :'layouts/_header' %>
+<form action='/password' method="POST">
+<h2>Please enter two words that are at least 5 letters long</h2>
+  <p>
+    <label for="first_word">First Word:</label>
+    <input id="first_word" type="text" name="password[first_word]"> </br> 
+    <label for="second_word">Second Word:</label>
+    <input id="second_word" type="text" name="password[second_word]">  
+  </p>
+  <input type="submit" value="submit"/>
+</form>
