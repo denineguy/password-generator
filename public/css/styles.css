@@ -1,3 +1,214 @@
+body{
+  width: 100%;
+}
+
 h1{
-    color: red;
+    color: black;
+}
+
+.container{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar{
+  /*background-color: #D6DDDE;*/
+  color: red;
+  width: 100%;
+  font-size: 20px;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: -8px;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 1px solid grey;
+}
+
+#nav-left{
+  float: left;
+  margin-left: 50px;
+  font-style: italic;
+}
+
+#nav-right{
+  float: right;
+  margin-right: 50px;
+  position: relative;
+}
+
+.float-container{
+  overflow: hidden;
+}
+
+
+/****************************************************************************************/
+/*********************************Password Section***************************************/
+/****************************************************************************************/
+
+.wrapper{
+  border-bottom: 3px solid red;
+  width: 100%;
+  margin-left: -10px;
+  /*background-color: lightgrey;*/
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.password-section{
+  /*border: 1px solid black;*/
+  width: 49%;
+  float: left;
+  padding-bottom: 70px;
+}
+
+.password-section h1{
+ /* margin: 0 auto;*/
+  text-align: center;
+  margin: 50px 0px 30px 0px;
+}
+
+.password-section h2{
+/*  margin: 0 auto;*/
+  text-align: center;
+  margin: 20px 0px 70px 0px;
+  font-style: italic;
+
+}
+
+.password-section p{
+/*  margin: 0 auto;*/
+  text-align: center;
+}
+
+button{
+  padding: 10px;
+  border-radius: 10px;
+  border-color: red;
+  border: solid red 2px;
+  background-color: black;
+  color: white;
+  font-weight:bold;
+  font-size: 16px;
+}
+
+button:hover{
+ background-color: red;
+  color: white; 
+}
+
+.logo-section{
+  float: left;
+  /*border: 1px solid black;*/
+  width: 49%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/****************************************************************************************/
+/*********************************Information Section***************************************/
+/****************************************************************************************/
+.instruction-section{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.instruction-section ul{
+ horizontal-align: center;
+  /*border: 1px solid black;*/
+}
+
+.image-section .image1,
+.image-section .image2{
+  background-size: 130px;
+  width: 31%;
+  height: 130px;
+  float:left;
+  margin:5px;
+}
+
+.image1{
+ background: url('../images/user_icon.png') no-repeat;
+  /*border: 1px solid black;*/
+}
+
+.image2{
+  background: url('../images/www_icon.png') no-repeat;
+   /*border: 1px solid black;*/
+}
+
+.image3{
+  background: url('../images/lock_icon.png') no-repeat;
+  background-position: 0px -5px;
+  background-size: 140px;
+  height: 130px;
+  width: 31%;
+  float: left;
+  /*border: 1px solid black;*/
+  margin: 5px;
+}
+
+.image-section p{
+  position: relative;
+}
+
+.instruction{
+  background-size: 130px;
+  width: 25%;
+  height: 130px;
+  float:left;
+  margin-left: -20px;
+  color: red;
+  /*border: 1px solid black;*/
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+}
+
+#p2,
+#p3{
+  margin-left: 55px;  
+}
+
+/****************************************************************************************/
+/*********************************Password Section***************************************/
+/****************************************************************************************/
+
+.password-form{
+  border: 1px solid D6DDDE;
+  border-radius: 5px;
+  width: 30%;
+  float: left;
+  text-align: center;
+  margin-right: 13%;
+  margin-left: 10%;
+  padding: 20px;
+  background-color: #D6DDDE;
+}
+
+#desk_image{
+  border: 1px solid black;
+  width: 38%;
+  float: left;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#submit{
+  padding: 10px;
+  border-radius: 10px;
+  border-color: red;
+  border: solid red 2px;
+  background-color: black;
+  color: white;
+  font-weight:bold;
+  font-size: 16px;
+}
+
+#submit:hover{
+ background-color: red;
+  color: white; 
+}
+
+#first_label{
+  text-align: left;
 }
