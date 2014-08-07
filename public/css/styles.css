@@ -30,6 +30,14 @@ h1{
   font-style: italic;
 }
 
+#nav-left a{
+  text-decoration: none;
+  color: red;
+}
+
+#nav-left a:hover{
+  color: black;
+}
 #nav-right{
   float: right;
   margin-right: 50px;
@@ -51,7 +59,7 @@ h1{
   margin-left: -10px;
   /*background-color: lightgrey;*/
   padding-top: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .password-section{
@@ -110,6 +118,7 @@ button:hover{
 .instruction-section{
   width: 60%;
   margin: 0 auto;
+
 }
 
 .instruction-section ul{
@@ -170,7 +179,7 @@ button:hover{
 }
 
 /****************************************************************************************/
-/*********************************Password Section***************************************/
+/*********************************Create Password Section***************  *****************/
 /****************************************************************************************/
 
 .password-form{
@@ -178,20 +187,27 @@ button:hover{
   border-radius: 5px;
   width: 30%;
   float: left;
-  text-align: center;
+  margin-top: 1%;
   margin-right: 13%;
   margin-left: 10%;
   padding: 20px;
   background-color: #D6DDDE;
+  border: 6px solid #B8BEBF;
+}
+
+.password-form h2{
+  text-align: center;
 }
 
 #desk_image{
-  border: 1px solid black;
+  background: url('../images/login_icon.png') no-repeat;
+  background-size: 255px;
+  background-position: 30% 50%;
   width: 38%;
+  height: 50%;
   float: left;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
+
 
 #submit{
   padding: 10px;
@@ -201,7 +217,7 @@ button:hover{
   background-color: black;
   color: white;
   font-weight:bold;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 #submit:hover{
@@ -209,6 +225,42 @@ button:hover{
   color: white; 
 }
 
-#first_label{
+.password-form #first_label,
+.password-form #second_label{
   text-align: left;
+  font-size: 16px;
 }
+
+.password-form #second_label{
+  margin-right: 7px;
+}
+
+#first_word,
+#second_word{
+  text-align: left;
+  width: 80%;
+  margin-right: 7px;
+  padding-left: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 100%;
+}
+
+/****************************************************************************************/
+/********************************* New Password Section *********************************/
+/****************************************************************************************/
+
+.password-form h1{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 55px
+}
+
+.password-form #new_password{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 55px;
+  color: red;
+}
+

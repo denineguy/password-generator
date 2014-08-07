@@ -1,15 +1,6 @@
 <html lang="en">  
 <%= erb :'layouts/_header' %>
-<body>
-    <div class="container">
-      <div class="nav-bar">
-        <div id="nav-left">
-          PASSIFY
-        </div>
-        <div id="nav-right">
-          PASSIFY
-        </div>
-      </div>
+
 
       <div class="wrapper float-container">
         
@@ -17,16 +8,18 @@
           <form action='/password' method="POST">
             <h2>Please enter two words that are at least 5 letters long</h2>
               <p>
-                <label for="first_word" id="first_label">First Word:</label>
-                <input id="first_word" type="text" name="password[first_word]"> </br> 
-                <label for="second_word" id="second_label">Second Word:</label>
+                <label for="first_word" id="first_label">First Word:</label><br>
+                <input id="first_word" type="text" name="password[first_word]">
+              </p>
+              <p>  
+                <label for="second_word" id="second_label">Second Word:</label><br>
                 <input id="second_word" type="text" name="password[second_word]">  
               </p>
-              <input type="submit" value="CREATE PASSWORD" id="submit"/>
+              <center><input id="submit" type="submit" value="CREATE PASSWORD" /></center>
             </form>
         </div>
         <div class="logo-section" id="desk_image">
-          <img src="images/login_icon.png" alt="login photo">
+          
         </div>
       </div>
 
