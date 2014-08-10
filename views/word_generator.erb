@@ -1,7 +1,5 @@
 <html lang="en">  
 <%= erb :'layouts/_header' %>
-
-
       <div class="wrapper float-container">
         
         <div class="password-form">
@@ -15,13 +13,12 @@
                 <label for="second_word" id="second_label">Second Word:</label><br>
                 <input id="second_word" type="text" name="password[second_word]">  
               </p>
-              <center><input id="submit" type="submit" value="CREATE PASSWORD" /></center>
+              <center><input id="create" class="submit"type="submit" value="CREATE PASSWORD" /></center>
             </form>
-        </div>
-        <div class="logo-section" id="desk_image">
-          
-        </div>
-      </div>
+        </div><!--Password Form Section Ended  -->
+        <div class="logo-section" id="desk_image">  
+        </div><!--logo Section Ended  -->
+      </div><!--Wrapper Section Ended  -->
 
       <div class="instruction-section">
         <ul class="image-section float-container">
@@ -40,8 +37,8 @@
              <p>Create a Password</p>
           </li>
         </ul>
-      </div>
+      </div><!--Instruction Section Ended  -->
 
-    </div>
+    </div><!-- Container Section Ended -->
   </body>
 </html>

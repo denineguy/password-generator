@@ -209,7 +209,7 @@ button:hover{
 }
 
 
-#submit{
+.submit{
   padding: 10px;
   border-radius: 10px;
   border-color: red;
@@ -220,7 +220,7 @@ button:hover{
   font-size: 12px;
 }
 
-#submit:hover{
+.submit:hover{
  background-color: red;
   color: white; 
 }
