@@ -1,18 +1,18 @@
 
+
 $(document).ready(function(){
   $('.error').hide();
 
-  $('#create').click(function(event){
-    event.preventDefault();   
+  $('#create').click(function(e){
     validateForm();
+    e.preventDefault();   
   }); 
 });      
 
 function validateForm() {
   console.log("Validating form...");
   $('.error').hide();
-  alert("clicked");
-
+  
   var fword = $('#first_word').val();
   var sword = $('#second_word').val();
 
@@ -21,6 +21,7 @@ function validateForm() {
     $('#first_word_error').show();
     haserrors = true;
     console.log('bad fword');
+   
   }
 
   if(sword.length<1) {
@@ -30,13 +31,13 @@ function validateForm() {
   }
 
   if (!haserrors) {
-    submit_form(fword, sword);
+    submitForm();
+    
   }
 }
 
-function submit_form(fword, sword) {
+function submitForm() {
   console.log('Form submitted successfully.');
-  $('#display_data').append(
-    fword
-    +'<li>'+sword+'</li>');
+  document.myform.action = '/password';
+  return true;
 }

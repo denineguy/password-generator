@@ -26,6 +26,7 @@ h1{
 
 #nav-left{
   float: left;
+  margin-top: 10px;
   margin-left: 50px;
   font-style: italic;
 }
@@ -42,6 +43,10 @@ h1{
   float: right;
   margin-right: 50px;
   position: relative;
+}
+
+.icon2{
+  height: 40px;
 }
 
 .float-container{
@@ -105,16 +110,13 @@ button:hover{
 }
 
 .logo-section{
-  /*float: left;*/
+  float: left;
   /*border: 1px solid black;*/
   width: 49%;
   margin: 0 auto;
   text-align: center;
 }
 
-span{
-  padding: 10px;
-}
 /****************************************************************************************/
 /*********************************Information Section***************************************/
 /****************************************************************************************/
@@ -149,7 +151,7 @@ span{
 }
 
 .image3{
-  background: url('../images/lock_icon.png') no-repeat;
+  background: url('../images/lock-icon2.png') no-repeat;
   background-position: 0px -5px;
   background-size: 140px;
   height: 130px;
@@ -184,9 +186,6 @@ span{
 /****************************************************************************************/
 /*********************************Create Password Section***************  *****************/
 /****************************************************************************************/
-div .password-form{
-  border: 1px solid black;
-}
 .password-form{
   border: 1px solid D6DDDE;
   border-radius: 5px;
@@ -208,8 +207,8 @@ div .password-form{
   background: url('../images/login_icon.png') no-repeat;
   background-size: 255px;
   background-position: 30% 50%;
-  width: 36%;
-  height: 49%;
+  width: 39%;
+  height: 50%;
   float: left;
 }
 
