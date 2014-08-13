@@ -3,15 +3,15 @@
       <div class="wrapper float-container">
         
         <div class="password-form">
-          <form action='/password' method="POST">
+          <form action='/password' method="POST" name="myform" onsubmit="validateForm(this);">
             <h2>Please enter two words that are at least 5 letters long</h2>
               <p>
-                <label for="first_word" id="first_label">First Word:</label><br>
-                <input id="first_word" type="text" name="password[first_word]">
+                <label for="first_word" id="first_label">First Word:</label><span class="error" id="first_word_error">Please enter a first word</span><br>
+                <input id="first_word" type="text" name="password[first_word]"><br>
               </p>
               <p>  
-                <label for="second_word" id="second_label">Second Word:</label><br>
-                <input id="second_word" type="text" name="password[second_word]">  
+                <label for="second_word" id="second_label">Second Word:</label><span class="error" id="second_word_error">Please enter a second word</span><br>
+                <input id="second_word" type="text" name="password[second_word]"><br>  
               </p>
               <center><input id="create" class="submit"type="submit" value="CREATE PASSWORD" /></center>
             </form>

@@ -26,6 +26,7 @@ h1{
 
 #nav-left{
   float: left;
+  margin-top: 10px;
   margin-left: 50px;
   font-style: italic;
 }
@@ -44,6 +45,10 @@ h1{
   position: relative;
 }
 
+.icon2{
+  height: 40px;
+}
+
 .float-container{
   overflow: hidden;
 }
@@ -55,7 +60,7 @@ h1{
 
 .wrapper{
   border-bottom: 3px solid red;
-  width: 100%;
+  width: 99%;
   margin-left: -10px;
   /*background-color: lightgrey;*/
   padding-top: 30px;
@@ -146,7 +151,7 @@ button:hover{
 }
 
 .image3{
-  background: url('../images/lock_icon.png') no-repeat;
+  background: url('../images/lock-icon2.png') no-repeat;
   background-position: 0px -5px;
   background-size: 140px;
   height: 130px;
@@ -181,7 +186,6 @@ button:hover{
 /****************************************************************************************/
 /*********************************Create Password Section***************  *****************/
 /****************************************************************************************/
-
 .password-form{
   border: 1px solid D6DDDE;
   border-radius: 5px;
@@ -203,7 +207,7 @@ button:hover{
   background: url('../images/login_icon.png') no-repeat;
   background-size: 255px;
   background-position: 30% 50%;
-  width: 38%;
+  width: 39%;
   height: 50%;
   float: left;
 }
@@ -244,6 +248,10 @@ button:hover{
   padding-top: 6px;
   padding-bottom: 6px;
   width: 100%;
+}
+
+.error{
+  color: red;
 }
 
 /****************************************************************************************/
