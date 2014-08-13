@@ -9,7 +9,6 @@ The Password Generator "Passify" is a Sinatra app that allows users to two words
 ![Password Entry Form](/public/images/password.png)
 
 <br />
-<br />
 ![Password Generation](/public/images/word_generator.png)
 
 
