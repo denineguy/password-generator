@@ -1,41 +1,41 @@
-# Super Heroes!
+# PASSIFY (Password Generator)
 
-## Instructions
+## Description
 
-1. `bundle install`
-2. `bundle exec shotgun`
+The Password Generator "Passify" is a Sinatra app that allows users to two words or their choosing and generate a random password. 
 
-### Make a form
+## Screenshots
 
-1. Create a route that responds to a get request at `/`.
-2. Create a view and render it in the GET `/` route.
-3. The form should have fields for the name of a super-hero team and their motto.
-4. There should be form inputs for each super-hero member's name, power and bio.
-
-It should look something like this:
-
-![Imgur](http://i.imgur.com/zrbFWNE.png?1)
-
-### Handle form submission
-
-1. Create a route that respond to a GET request at `/team`
-2. Have the form send a GET request to this route.
-2. Render a template that displays the team data and each member's data.
-
-## Final Output
-
-Your params should be nested, for example:
-  you would access the first super-hero's name as:
-````ruby
-  params["team"]["members"][0][name]
-
-````
-When you post to this form you should render a page that displays the name of the team and each member of the team, along with their name, super power and bio.
-
-Your view should display something like this:
-
-
-![Imgur](http://i.imgur.com/SzO0phP.png?1)
+Add some spiffy screenshots of your app here.
+![Password Entry Form](/public/images/password.png)
+![Password Generation](/public/images/word_generator.png)
 
 
 
+## Background
+
+With the necessity to have a username and password for almost everything we do in this world, I was running out of ideas for password. I wanted to have a way to create a password
+utilizing letters or words that I might remember, but would still be secure. 
+
+I implemented a sinatra application, that takes in to user inputs.  I permutate those inputs and then generate a password for the user.
+
+## Features/Usage
+
+This is a pretty seamless and simple app to use.  The password is not randomly generated in that it accepts user input in order to generate the password. This way it provides the user some permutation of words or letters that they can remember.  It offers form validation to ensure words of 5 characters in length have been input in to the form fields.
+
+
+## Development/Contribution
+
+If you have any suggestions of how I can make this app better all suggestions are welcome and appreciated.  I would like to update this so that the user can input what the character length of the password they desire. I ultimately want to figure out a way for user to never have to worry about remembering passwords ever again. 
+
+## Future
+
+What features are you currently working on? Only mention things that you
+actually are implementing. No pie-in-the-sky-never-gonna-happen stuff.
+
+## Author
+
+Denine Guy blog: denineguy.github.io, twitter: @sashaydoll
+## License
+
+Flat Dash is MIT Licensed. See LICENSE for details.
