@@ -1,11 +1,13 @@
-
-
 $(document).ready(function(){
   $('.error').hide();
 
   $('#create').click(function(e){
-    validateForm();
-    e.preventDefault();   
+    if(validateForm()){
+      submitForm();
+    }
+    else{
+      e.preventDefault();   
+    }  
   }); 
 });      
 
@@ -21,7 +23,6 @@ function validateForm() {
     $('#first_word_error').show();
     haserrors = true;
     console.log('bad fword');
-   
   }
 
   if(sword.length<1) {
@@ -30,9 +31,9 @@ function validateForm() {
     console.log('bad sword');
   }
 
-  if (!haserrors) {
+  if(!haserrors) {
     submitForm();
-    
+    return true;
   }
 }
 
